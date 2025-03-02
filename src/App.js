@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Authentication } from "./Pages/Authentication";
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <Routes>
-        <Route path="/" element={<Authentication/>}/>
+        <Route path="/" element={<Authentication />} />
       </Routes>
-    </>
+    </HashRouter>
   );
 }
 
